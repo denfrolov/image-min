@@ -11,7 +11,6 @@ gulp.task('resize', function () {
 	gulp.src('src/**/*')
 	.pipe(imageResize({
 		width : 1920,
-		height : 1080,
       //crop : true,
       //upscale : false
   }))
