@@ -9,7 +9,7 @@ var cache = require('gulp-cache');
 gulp.task('img', function() {
 	return gulp.src('src/**/*')
 	.pipe(imageResize({
-		width : 100
+		width : 1920
 	})
 	.pipe(cache(imagemin([
 		imagemin.gifsicle({interlaced: true}),
