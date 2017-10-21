@@ -9,11 +9,12 @@
   "author": "WebDesign Master",
   "license": "ISC",
   "devDependencies": {
+    "del": "*",
     "gulp": "*",
+    "gulp-cache": "*",
+    "gulp-image-resize": "*",
     "gulp-imagemin": "*",
     "imagemin-jpeg-recompress": "*",
-    "imagemin-pngquant": "*",
-    "gulp-image-resize": "*",
-    "gulp-cache": "*"
+    "imagemin-pngquant": "*"
   }
 }
