@@ -19,7 +19,7 @@ gulp.task('resize', function () {
 
 
 // Images optimization and copy in /dist
-gulp.task('img', function() {
+gulp.task('img',['clear'], function() {
 	return gulp.src('src/**/*')
 	.pipe(cache(imageResize({
 		width : 1920,
@@ -44,7 +44,7 @@ gulp.task('img', function() {
 	.pipe(gulp.dest('dist'));
 });
 
-// Clearing the cache
+// Clearing the cache and remove dist
 gulp.task('clean', function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
