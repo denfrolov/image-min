@@ -13,7 +13,7 @@ gulp.task('img',['clean'], function() {
 	.pipe(
 		imageResize({
 			width : 1920,
-			//height : 800,
+			height : 800,
 			//crop : true,
       		//upscale : false
       	}),
