@@ -6,6 +6,7 @@ var imageResize            = require('gulp-image-resize');
 var del                    = require('del');
 
 
+
 // Images optimization and copy in /dist
 gulp.task('img',['clean'], function() {
 	return gulp.src('src/**/*')
