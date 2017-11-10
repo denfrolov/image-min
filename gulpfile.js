@@ -3,7 +3,6 @@ var imagemin               = require('gulp-imagemin');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 var pngquant               = require('imagemin-pngquant');
 var imageResize            = require('gulp-image-resize');
-var cache                  = require('gulp-cache');
 var del                    = require('del');
 
 
@@ -12,8 +11,8 @@ gulp.task('img',['clean'], function() {
 	return gulp.src('src/**/*')
 	.pipe(
 		imageResize({
-			width : 800,
-			height : 800,
+			width : 1920,
+			//height : 800,
 			//crop : true,
       		//upscale : false
       	}),
@@ -38,7 +37,4 @@ gulp.task('img',['clean'], function() {
 // Clearing the cache and remove dist
 gulp.task('clean', function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
-});
-gulp.task('clear', function (done) {
-	return cache.clearAll(done);
 });

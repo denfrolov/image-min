@@ -11,7 +11,6 @@
   "devDependencies": {
     "del": "*",
     "gulp": "*",
-    "gulp-cache": "*",
     "gulp-image-resize": "*",
     "gulp-imagemin": "*",
     "imagemin-jpeg-recompress": "*",
