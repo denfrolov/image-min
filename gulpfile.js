@@ -16,7 +16,8 @@ gulp.task('img',['clean'], function() {
 			height : 800,
 			//crop : true,
       		//upscale : false
-      	}),
+      	}))
+	.pipe(
 		imagemin([
 			imagemin.gifsicle({interlaced: true}),
 			imagemin.jpegtran({progressive: true}),
