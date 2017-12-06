@@ -10,13 +10,7 @@ var del                    = require('del');
 // Images optimization and copy in /dist
 gulp.task('img',['clean'], function() {
 	return gulp.src('src/**/*')
-	.pipe(
-		imageResize({
-			width : 1920,
-			height : 800,
-			//crop : true,
-      		//upscale : false
-      	}))
+	//.pipe(imageResize({ width : 1920, height : 800, crop : false, upscale : false }))
 	.pipe(
 		imagemin([
 			imagemin.gifsicle({interlaced: true}),
