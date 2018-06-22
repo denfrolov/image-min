@@ -14,6 +14,6 @@
     "gulp-image-resize": "*",
     "gulp-imagemin": "*",
     "imagemin-jpeg-recompress": "*",
-    "imagemin-pngquant": "*"
+    "imagemin-pngquant": "^5.1.0"
   }
 }
