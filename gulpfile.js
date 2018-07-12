@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var imagemin = require('gulp-imagemin');
 var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 var pngquant = require('imagemin-pngquant');
