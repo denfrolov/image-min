@@ -13,8 +13,8 @@
     "gulp": "*",
     "gulp-image-resize": "*",
     "gulp-imagemin": "*",
-    "gulp-util": "^3.0.8",
+    "gulp-util": "*",
     "imagemin-jpeg-recompress": "*",
-    "imagemin-pngquant": "^5.1.0"
+    "imagemin-pngquant": "*"
   }
 }
