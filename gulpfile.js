@@ -7,7 +7,7 @@ var imageResize = require('gulp-image-resize');
 var del = require('del');
 
 // Images optimization and copy in /dist
-gulp.task('img', gulp.parallel('clean'), function () {
+gulp.task('img', function () {
 	return gulp.src(['src/**/*.jpg', 'src/**/*.png'])
 		.pipe(imageResize({
 			width: 1920,
@@ -44,6 +44,9 @@ gulp.task('img', gulp.parallel('clean'), function () {
 });
 
 // Clearing the cache and remove dist
-gulp.task('clean', function () {
-	return del.sync('dist'); // Удаляем папку dist перед сборкой
-});
+function clean(cb) {
+	del('dist');
+	cb();
+}
+
+gulp.task('default', gulp.series(clean, 'img'));
