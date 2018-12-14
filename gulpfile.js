@@ -26,8 +26,7 @@ gulp.task('img', function () {
 				imageminJpegRecompress({
 					loops: 5,
 					min: 75,
-					max: 92,
-					quality: 'medium'
+					max: 92
 				}),
 				imagemin.svgo(),
 				imagemin.optipng({
